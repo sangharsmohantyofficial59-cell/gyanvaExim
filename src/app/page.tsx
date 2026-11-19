@@ -43,6 +43,7 @@ export default function HomePage() {
         eyebrow={company.tagline}
         title="Empowering Businesses Through Technology, Strategy and Global Opportunities."
         description="Gyanav Exim Private Limited supports businesses with digital solutions, technology implementation and business consultancy, while building toward future global trade opportunities."
+        particles
       >
         <div className="button-row">
           <Link className="button" href="#business-areas">Explore Our Services</Link>

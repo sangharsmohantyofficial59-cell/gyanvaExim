@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { company, navigation } from "../../lib/site-config";
+import ParticlesBackground from "./ParticlesBackground";
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
@@ -11,7 +12,8 @@ const legalLinks = [
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
-      <div className="container">
+      <ParticlesBackground id="footer-particles" density={0.7} />
+      <div className="container site-footer-content">
         <div className="footer-main">
           <div className="footer-company">
             <Image

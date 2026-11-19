@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { company, productGallery, tradeLines } from "../../lib/site-config";
+import ParticlesBackground from "./ParticlesBackground";
 
 /**
- * @param {{ eyebrow?: string, title: string, description?: string, children?: import("react").ReactNode }} props
+ * @param {{ eyebrow?: string, title: string, description?: string, children?: import("react").ReactNode, particles?: boolean }} props
  */
-export function PageHero({ eyebrow, title, description, children }) {
+export function PageHero({ eyebrow, title, description, children, particles = false }) {
   return (
     <section className="page-hero">
+      {particles && <ParticlesBackground id="hero-particles" />}
       <div className="container page-hero-inner">
         {eyebrow && <span className="eyebrow">{eyebrow}</span>}
         <h1>{title}</h1>
