@@ -128,7 +128,7 @@ export default function ContactPage() {
         <div style={{ marginTop: 60, borderTop: "1px solid #DDD5C2", paddingTop: 36, display: "grid", gap: 24, fontSize: 17 }}>
           <div>
             <div style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, color: "#B5502D" }}>Regd. office</div>
-            <p style={{ margin: "6px 0 0" }}>Flat no.159, Rose Apartment, Sector-18B, Dwarka, Southwest Delhi-110078</p>
+            <p style={{ margin: "6px 0 0" }}>Flat No. 344, Greenview Apartment, Dwarka Sector 19B, Southwest Delhi -110075</p>
           </div>
           <div>
             <div style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, color: "#B5502D" }}>Branch office</div>

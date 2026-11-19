@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Frame, Eyebrow, SectionTitle, Manifest, Thumbs } from "../components/Layout";
 import { IMG } from "../constants";
-import { useCounter } from "../utils/hooks";
 
 export default function HomePage({ setPage }) {
-  const [statsOn, setStatsOn] = useState(false);
-  useEffect(() => {
-    const t = setTimeout(() => setStatsOn(true), 200);
-    return () => clearTimeout(t);
-  }, []);
-  const countries = useCounter(20, statsOn);
-  const customers = useCounter(150, statsOn);
-  const projects = useCounter(35, statsOn);
-
   const gallery = [
     { src: IMG.importExport, alt: "Import export" },
     { src: IMG.ironOre, alt: "Iron ore" },
@@ -126,32 +116,6 @@ export default function HomePage({ setPage }) {
           </div>
         </div>
 
-        <div style={{ padding: "10px 0 76px" }}>
-          <Eyebrow>Our satisfied customers</Eyebrow>
-          <div style={{ border: "1px solid #DDD5C2", padding: "42px 28px" }}>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                textAlign: "center",
-                gap: 16,
-              }}
-            >
-              <div>
-                <div style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(30px, 4vw, 46px)", color: "#B5502D" }}>{countries}+</div>
-                <div style={{ fontSize: 14, color: "#5c5a52", fontFamily: "'IBM Plex Mono', monospace" }}>Countries</div>
-              </div>
-              <div>
-                <div style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(30px, 4vw, 46px)", color: "#B5502D" }}>{customers}+</div>
-                <div style={{ fontSize: 14, color: "#5c5a52", fontFamily: "'IBM Plex Mono', monospace" }}>Customers</div>
-              </div>
-              <div>
-                <div style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(30px, 4vw, 46px)", color: "#B5502D" }}>{projects}+</div>
-                <div style={{ fontSize: 14, color: "#5c5a52", fontFamily: "'IBM Plex Mono', monospace" }}>Projects</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </Frame>
     </div>
   );
