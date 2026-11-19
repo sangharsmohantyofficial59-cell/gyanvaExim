@@ -61,6 +61,6 @@ export const IMG = {
   rcn: "https://gyanavexim.com/wp-content/uploads/2023/06/RCN-PROJECT-300x300.jpg",
 };
 
-export const GOOGLE_SCRIPT_URL = "";
+export const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbygC1pXpdBnpSVAS0sVWLt7w9lPwHPN0sRiHrIMEJm9u7VJUdvRHKe8LMpUswN-IaB7Uw/exec";
 
 export const WHATSAPP_NUMBER = "919310737981";
